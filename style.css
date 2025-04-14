@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Special+Gothic+Condensed+One&display=swap');
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 :root {
     --Special_Gothic: "Special Gothic Condensed One", sans-serif;
     --Quicksand: "Quicksand", sans-serif;
@@ -9,4 +7,14 @@
 
 body {
     background-color: #303030;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-item,
+.navbar .form-control {
+    font-family: var(--Quicksand);
+}
+
+.navbar .btn {
+    font-family: var(--Special_Gothic);
 }
