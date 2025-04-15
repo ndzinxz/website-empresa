@@ -29,10 +29,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Link</a>
+                        <a class="nav-link text-white" href="/index.html">
+                            <i class="bi bi-house-fill"></i>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -50,7 +49,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-light" href="#">Disabled</a>
+                      <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi bi-cart"></i> Carrinho
+                      </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -73,28 +74,28 @@
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="/img/tuf-gaming-z790.webp" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Placa Mae Asus Tuf Gaming Z790-BTF WIFI</h5>
+                    <h5 class="card-title">Placa Mae Asus Tuf Gaming</h5>
                     <p class="card-text">Placa Mae Asus Tuf Gaming Z790-BTF WIFI, DDR5, Socket LGA 1700, ATX, Chipset Intel Z790, TUF-GAMING-Z790-BTF-WIFI</p>
-                    <p class="preco"><br><br>R$ 2.999,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/img/rog-strix-b550.webp" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Placa Mae Asus Rog Strix B650E-F Gaming WIFI</h5>
-                    <p class="card-text">Placa Mae Asus Rog Strix B650E-F Gaming WIFI, DDR5, Socket AMD AM5, ATX, Chipset AMD B650, ROG-STRIX-B650E-F-GAMING-WIFI</p>
-                    <p class="preco"><br><br>R$ 449,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <p class="preco"><br><br><br>R$ 2.999,99</p>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="Placa Mae Asus Tuf Gaming" data-price="2999.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="/img/b650E_Rog.webp" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Processador AMD Ryzen 7 5800X</h5>
-                  <p class="card-text">Processador AMD Ryzen 7 5800X, 8-Core, 16-Threads, 3.8GHz (4.7GHz Turbo), Cache 36MB, AM4, 100-100000063WOF</p>
-                  <p class="preco"><br>R$ 1.399,99</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                    <h5 class="card-title">Placa Mae Asus Rog Strix B650E-F</h5>
+                    <p class="card-text">Placa Mae Asus Rog Strix B650E-F Gaming WIFI, DDR5, Socket AMD AM5, ATX, Chipset AMD B650, ROG-STRIX-B650E-F-GAMING-WIFI</p>
+                    <p class="preco"><br><br>R$ 2.599,99</p>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="Placa Mae Asus Rog Strix B650E-F" data-price="2599.99">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/img/rog-strix-b550.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Asus ROG Strix B550-XE</h5>
+                  <p class="card-text">Placa Mae Asus ROG Strix B550-XE Gaming, DDR4, Socket AM4, ATX, Chipset AMD B550</p>
+                  <p class="preco"><br><br>R$ 1.399,99</p>
+                  <a href="#" class="btn btn-primary add-to-cart" data-name="Asus ROG Strix B550-XE" data-price="1399.99">Comprar</a>
                 </div>
               </div>
             <div class="card" style="width: 18rem;">
@@ -102,11 +103,31 @@
               <div class="card-body">
                 <h5 class="card-title">Placa Mae Gigabyte Z790</h5>
                 <p class="card-text">Placa Mae Gigabyte Z790 Aorus Elite X AX, WiFi, DDR5, LGA 1700, ATX, Chipset Intel Z790, Z790-AORUS-ELITE-X-AX</p>
-                <p class="preco"><br>R$ 2.399,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <p class="preco"><br><br>R$ 2.589,99</p>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Placa Mae Gigabyte Z790" data-price="2589.99">Comprar</a>
               </div>
             </div>
         </div>
     </div>
-</body>
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items" class="list-group mb-3">
+            </ul>
+            <p class="text-end fw-bold">Total: R$ <span id="cart-total">0.00</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
 </html>

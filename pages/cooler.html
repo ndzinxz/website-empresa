@@ -29,10 +29,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Link</a>
+                        <a class="nav-link text-white" href="/index.html">
+                            <i class="bi bi-house-fill"></i>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -50,7 +49,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-light" href="#">Disabled</a>
+                      <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi bi-cart"></i> Carrinho
+                      </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -76,7 +77,7 @@
                     <h5 class="card-title">Cooler Master Hyper 622 Halo</h5>
                     <p class="card-text">Cooler Para Processador Cooler Master Hyper 622 Halo White, RGB, 120mm, Branco, RR-D6WW-20PA-R1</p>
                     <p class="preco"><br><br>R$ 579,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="Cooler Master Hyper 622 Halo" data-price="579.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -85,7 +86,7 @@
                     <h5 class="card-title">Cooler Cougar Forza 85 Essential</h5>
                     <p class="card-text">Cooler Para Processador Cougar Forza 85 Essential, 120mm, Preto, CGR-FZAE85</p>
                     <p class="preco"><br><br>R$ 329,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="Cooler Cougar Forza 85 Essential" data-price="329.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -94,7 +95,7 @@
                   <h5 class="card-title">Water Cooler Aigo Darkflash</h5>
                   <p class="card-text">Water Cooler Aigo Darkflash DN240S, ARGB, 240mm, Preto, DN240S-BK</p>
                   <p class="preco"><br><br>R$ 759,99</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary add-to-cart" data-name="Water Cooler Aigo Darkflash" data-price="759.99">Comprar</a>
                 </div>
               </div>
             <div class="card" style="width: 18rem;">
@@ -103,10 +104,31 @@
                 <h5 class="card-title">Water Cooler Corsair Icue H150i</h5>
                 <p class="card-text">Water Cooler Corsair Icue H150i Elite LCD XT, RGB, 360mm, Branco, CW-9060077-WW</p>
                 <p class="preco"><br><br>R$ 1.989,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Water Cooler Corsair Icue H150i" data-price="1989.99">Comprar</a>
               </div>
             </div>
         </div>
     </div>
-</body>
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items" class="list-group mb-3">
+              <!-- Os itens do carrinho serão adicionados aqui dinamicamente -->
+            </ul>
+            <p class="text-end fw-bold">Total: R$ <span id="cart-total">0.00</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
 </html>

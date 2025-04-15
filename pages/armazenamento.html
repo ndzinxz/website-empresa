@@ -29,10 +29,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Link</a>
+                        <a class="nav-link text-white" href="/index.html">
+                            <i class="bi bi-house-fill"></i>
+                        </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
@@ -50,7 +49,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-light" href="#">Disabled</a>
+                      <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi bi-cart"></i> Carrinho
+                      </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -75,8 +76,8 @@
                 <div class="card-body">
                     <h5 class="card-title">SSD Lexar NM1090</h5>
                     <p class="card-text">SSD Lexar NM1090, 1TB, M.2 2280, PCIe NVMe, Leitura 12000MB/s, Gravacao 11000MB/s, LNM1090001T-RNANG</p>
-                    <p class="preco"><br>R$ 1.629,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <p class="preco"><br><br>R$ 1.629,99</p>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="SSD Lexar NM1090" data-price="1629.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -85,7 +86,7 @@
                     <h5 class="card-title">HD Seagate Skywawk</h5>
                     <p class="card-text">HD Seagate Skywawk, 1TB, 3.5, 5400 RPM, Sata III 6GB/s, Cache 256MB, ST1000VX013</p>
                     <p class="preco"><br><br>R$ 449,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="HD Seagate Skywawk" data-price="449.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -94,7 +95,7 @@
                   <h5 class="card-title">SSD MSI Spatium S270, 960GB</h5>
                   <p class="card-text">SSD MSI Spatium S270, 960GB, 2.5, Sata III 6GB/s, Leitura 500MB/s, Gravacao 450MB/s, SPATIUM-S270-960G</p>
                   <p class="preco"><br>R$ 399,99</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary add-to-cart" data-name="SSD MSI Spatium S270, 960GB" data-price="399.99">Comprar</a>
                 </div>
               </div>
             <div class="card" style="width: 18rem;">
@@ -102,12 +103,32 @@
               <div class="card-body">
                 <h5 class="card-title">SSD Externo Kingston XS2000, 4TB</h5>
                 <p class="card-text">SSD Externo Kingston XS2000, 4TB, USB-C 3.2, SXS2000-4000G</p>
-                <p class="preco"><br>R$ 2.229,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <p class="preco"><br><br>R$ 2.229,99</p>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="SSD Externo Kingston XS2000, 4TB" data-price="2229.99">Comprar</a>
               </div>
             </div>
           </div>
         </div>
     </div>
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items" class="list-group mb-3">
+            </ul>
+            <p class="text-end fw-bold">Total: R$ <span id="cart-total">0.00</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
 </body>
 </html>

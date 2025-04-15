@@ -28,9 +28,16 @@ body {
     padding: 50px;
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 20px;
     flex-wrap: wrap;
     border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-bottom: 20px;
 }
 
 .jumbotron .container-2 {

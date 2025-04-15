@@ -28,12 +28,6 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Link</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +44,17 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-light" href="#">Disabled</a>
+                      <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="bi bi-person-circle"></i> Entre ou Cadastre-se
+                      </a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi bi-cart"></i> Carrinho
+                        </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -76,7 +80,7 @@
                     <h5 class="card-title">SSD Lexar NM1090</h5>
                     <p class="card-text">SSD Lexar NM1090, 1TB, M.2 2280, PCIe NVMe, Leitura 12000MB/s, Gravacao 11000MB/s, LNM1090001T-RNANG</p>
                     <p class="preco"><br>R$ 1.629,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="SSD Lexar NM1090" data-price="1629.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -85,7 +89,7 @@
                     <h5 class="card-title">HD Seagate Skywawk</h5>
                     <p class="card-text">HD Seagate Skywawk, 1TB, 3.5, 5400 RPM, Sata III 6GB/s, Cache 256MB, ST1000VX013</p>
                     <p class="preco"><br><br>R$ 449,99</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a href="#" class="btn btn-primary add-to-cart" data-name="HD Seagate Skywawk" data-price="449.99">Comprar</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -94,7 +98,7 @@
                   <h5 class="card-title">Processador AMD Ryzen 7 5800X</h5>
                   <p class="card-text">Processador AMD Ryzen 7 5800X, 8-Core, 16-Threads, 3.8GHz (4.7GHz Turbo), Cache 36MB, AM4, 100-100000063WOF</p>
                   <p class="preco"><br>R$ 1.399,99</p>
-                  <a href="#" class="btn btn-primary">Comprar</a>
+                  <a href="#" class="btn btn-primary add-to-cart" data-name="Processador AMD Ryzen 7 5800X" data-price="1399.99">Comprar</a>
                 </div>
               </div>
             <div class="card" style="width: 18rem;">
@@ -103,7 +107,7 @@
                 <h5 class="card-title">Placa Mae Gigabyte Z790</h5>
                 <p class="card-text">Placa Mae Gigabyte Z790 Aorus Elite X AX, WiFi, DDR5, LGA 1700, ATX, Chipset Intel Z790, Z790-AORUS-ELITE-X-AX</p>
                 <p class="preco"><br>R$ 2.399,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Placa Mae Gigabyte Z790" data-price="2399.99">Comprar</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -112,7 +116,7 @@
                 <h5 class="card-title">Memoria Adata XPG Lancer Blade</h5>
                 <p class="card-text">Memoria Adata XPG Lancer Blade, RGB, 8GB (1x8GB), DDR5, 5600MHz, C46, Branco, AX5U5600C468G-SLABRWH</p>
                 <p class="preco"><br>R$ 289,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Memoria Adata XPG Lancer Blade" data-price="289.99">Comprar</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -121,7 +125,7 @@
                 <h5 class="card-title">MSI GeForce RTX 5070</h5>
                 <p class="card-text">Placa de Video MSI GeForce RTX 5070 Gaming Trio OC, 12GB, GDDR7, 192-bit, G5070-12GTC </p>
                 <p class="preco"><br><br>R$ 6.899,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="MSI GeForce RTX 5070" data-price="6899.99">Comprar</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -130,7 +134,7 @@
                 <h5 class="card-title">Fonte Corsair RM1200x Shift</h5>
                 <p class="card-text">Fonte Corsair RM1200x Shift, 1200W, Full-Modular, 80 Plus Gold, Branco, CP-9020276-BR</p>
                 <p class="preco"><br><br>R$ 1.499,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Fonte Corsair RM1200x Shift" data-price="1499.99">Comprar</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -139,7 +143,7 @@
                 <h5 class="card-title">Air Cooler Master Hyper 622 Halo</h5>
                 <p class="card-text">Cooler Para Processador Cooler Master Hyper 622 Halo White, RGB, 120mm, Branco, RR-D6WW-20PA-R1</p>
                 <p class="preco"><br><br>R$ 579,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Air Cooler Master Hyper 622 Halo" data-price="579.99">Comprar</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -148,10 +152,79 @@
                 <h5 class="card-title">Water Cooler Corsair</h5>
                 <p class="card-text">Water Cooler Corsair Icue H150i Elite LCD XT, RGB, 360mm, Branco, CW-9060077-WW</p>
                 <p class="preco"><br><br>R$ 1.989,99</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-primary add-to-cart" data-name="Water Cooler Corsair" data-price="1989.99">Comprar</a>
               </div>
             </div>
         </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Entre ou Cadastre-se</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+              </div>
+              <button type="submit" class="btn btn-success w-100">Entrar</button>
+            </form>
+            <hr>
+            <p class="text-center">Ainda não tem uma conta?</p>
+            <button class="btn btn-primary w-100">Cadastre-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items" class="list-group mb-3">
+            </ul>
+            <p class="text-end fw-bold">Total: R$ <span id="cart-total">0.00</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Finalizar Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label">Seu E-mail</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success w-100">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 </html>
