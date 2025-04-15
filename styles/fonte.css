@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Special+Gothic+Condensed+One&display=swap');
+
+:root {
+    --Special_Gothic: "Special Gothic Condensed One", sans-serif;
+    --Quicksand: "Quicksand", sans-serif;
+}
+
+body {
+    background-color: #303030;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-item,
+.navbar .form-control {
+    font-family: var(--Quicksand);
+    border-radius: 20px;
+}
+
+.navbar .btn {
+    font-family: var(--Special_Gothic);
+    border-radius: 20px;
+}
+
+.jumbotron .container {
+    background-color: rgb(214, 215, 216);
+    position: relative;
+    top: 65px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.jumbotron .container-2 {
+    background-color: #303030;
+    position: relative;
+    top: 65px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.jumbotron .container-2 .lead {
+    font-family: var(--Special_Gothic);
+    color: white;
+    font-size: 80px;
+    position: relative;
+    top: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: var(--Quicksand);
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: var(--Quicksand);
+}
+
+.preco {
+    font-family: var(--Special_Gothic);
+}
+
+.bi-search {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #0d8f25;
+}
